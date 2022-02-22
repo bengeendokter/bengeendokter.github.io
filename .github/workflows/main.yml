@@ -15,8 +15,8 @@ jobs:
       - name: 🧪 Cypress run
         uses: cypress-io/github-action@v2
         with:
-          build: npm run build
-          start: npm start
+          build: yarn build
+          start: yarn start
 
   build-and-deploy:
     name: Build and Github Pages Deploy
