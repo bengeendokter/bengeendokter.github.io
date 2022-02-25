@@ -11,6 +11,17 @@
         "src": "logo.png",
         "type": "image/png",
         "sizes": "325x325"
+    },
+    {
+        "src": "logo_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "maskable_icon.png",
+        "type": "image/png",
+        "sizes": "361x361",
+        "purpose": "maskable"
     }],
     "start_url": ".",
     "display": "standalone",
