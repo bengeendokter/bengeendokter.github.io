@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ExtLink from './components/ExtLink';
 
 function App()
 {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    < >
         <p>
           Nee Yoran, het is nog niet af.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <ExtLink href="https://reactjs.org">
+          test
+        </ExtLink>
+    </>
   );
 }
 
