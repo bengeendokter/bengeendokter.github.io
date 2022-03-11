@@ -3,6 +3,28 @@ import './App.css';
 import ExtLink from './components/ExtLink';
 import ProjectPreview from './components/ProjectPreview';
 
+let projecten;
+
+// fetch("assets/projecten/data.json").then((json) => projecten = json);
+// console.log(projecten);
+
+const projecten =
+{
+  data: [{
+    title: "Scouts Alowis Site"
+    , tags: ["HTML", "CSS"]
+    , beschrijving: "Een site die ik heb gemaakt voor Scouts Sint-Aloysius Aalst."
+    , imgAlt: "screenshot van Alowis Site"
+  }
+    ,
+  {
+    title: "Rummikub"
+    , tags: ["Hogent"]
+    , beschrijving: "Een java applictie van het spel Rummikub."
+    , imgAlt: "screenshot van Rummikub project"
+  }]
+};
+
 function App()
 {
   return (
@@ -25,7 +47,7 @@ function App()
         </section>
         <section aria-labelledby='projecten-title'>
           <h2 id='projecten-title'>Projecten</h2>
-          <ProjectPreview title={"Scouts Alowis Site"} beschrijving={"Een site die ik heb gemaakt voor Scouts Sint-Aloysius Aalst"} imgAlt={"screenshot van Alowis Site"} />
+          {projecten.data.map((project, i) => <ProjectPreview key={i} {...project} />)}
         </section>
         <section aria-labelledby='CV-title'>
           <h2 id='CV-title'>CV</h2>
