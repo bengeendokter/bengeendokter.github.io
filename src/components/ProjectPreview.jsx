@@ -1,10 +1,14 @@
 import React from 'react';
+import Tag from './Tag';
 
-export default function ProjectPreview({children, href = "test", target = "_blank", ...rest})
+export default function ProjectPreview({title, tags, beschrijving, imgSrc, imgAlt, ...rest})
 {
     return (
-        <a href={href} target={target} rel="noopener noreferrer" {...rest}>
-            {children}
-        </a>
+        <div className='project-preview'>
+            <img src={imgSrc} alt={imgAlt} className='project-image' />
+            <p className='project-title'>{title}</p>
+            <Tag>personal project</Tag>
+            <p className='project-beschrijving'>{beschrijving}</p>
+        </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ExtLink from './components/ExtLink';
+import ProjectPreview from './components/ProjectPreview';
 
 function App()
 {
@@ -24,7 +25,7 @@ function App()
         </section>
         <section aria-labelledby='projecten-title'>
           <h2 id='projecten-title'>Projecten</h2>
-
+          <ProjectPreview title={"Scouts Alowis Site"} beschrijving={"Een site die ik heb gemaakt voor Scouts Sint-Aloysius Aalst"} imgAlt={"screenshot van Alowis Site"} />
         </section>
         <section aria-labelledby='CV-title'>
           <h2 id='CV-title'>CV</h2>
