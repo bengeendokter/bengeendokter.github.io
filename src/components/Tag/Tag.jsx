@@ -1,9 +1,10 @@
 import React from 'react';
+import TagCSS from './Tag.module.css';
 
 export default function Tag({children, ...rest})
 {
     return (
-        <span className='tag'>
+        <span className={TagCSS.main}>
             {children}
         </span>
     );

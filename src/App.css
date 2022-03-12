@@ -2,40 +2,28 @@
 
 :root
 {
-  --clr-alowisgray: 0, 0%, 35%;
-  --clr-alowisred: 5, 80%, 35%;
-  --clr-alowisbrown: 37, 37%, 85%;
-
-  /* main background */
-  --clr-primary: 0, 0%, 100%;
-
-  /* header/footer background */
-  --clr-accent: var(--clr-alowisbrown);
-  --clr-text: 0, 0%, 0%;
-  --clr-strong: 54, 77%, 74%;
+  --clr-purple: 278, 23%, 43%;
+  --clr-blue: 224, 25%, 48%;
+  --clr-black: 240, 21%, 8%;
+  --clr-white: 240, 100%, 99%;
+  
+  --clr-background: hsla(var(--clr-black));
+  --clr-accent1: hsla(var(--clr-purple));
+  --clr-accent2: hsla(var(--clr-blue));
+  --clr-text: hsla(var(--clr-white));
+  --clr-selection: hsla(64, 82%, 59%);
 }
 
-/* darktheme */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --clr-primary: 0, 0%, 0%;
-        --clr-text: 0, 0%, 100%;
-
-        --clr-alowisgray: 0, 0%, 55%;
-        --clr-alowisred: 0, 100%, 62%;
-        --clr-alowisbrown: 31, 88%, 11%;
-
-        --clr-strong: 54, 76%, 20%;
-    }
-
-    @media screen and (min-width: 1000px){
-        ul.nav-sublist a:hover {
-            color: hsla(var(--clr-text));
-            text-shadow: 1px 1px hsla(var(--clr-primary));
-        }
-    }
-    }
+/* light-theme */
+/* @media (prefers-color-scheme: dark)
+{
+  :root
+  {
+  --clr-background: hsla(var(--clr-white));
+  --clr-text: hsla(var(--clr-black));
+  }
 } */
+
 
 *, *::before, *::after
 {
@@ -44,6 +32,22 @@
 
 ::selection
 {
-  background: hsla(var(--clr-alowisred));
-  color: hsla(var(--clr-primary));
+  background: var(--clr-selection);
+  color: var(--clr-background);
+}
+
+html
+{
+  background:var(--clr-background);
+  color: var(--clr-text);
+}
+
+.projecten
+{
+  background-color: var(--clr-accent1);
+}
+
+.CV
+{
+  background-color: var(--clr-accent2);
 }

@@ -29,8 +29,8 @@ function App()
         <a href="#main-content">Navigatie overslaan</a>
         <nav>
           <ul>
-            <li>Projecten</li>
-            <li>CV</li>
+            <li><a href="#projecten">Projecten</a></li>
+            <li><a href="#CV">CV</a></li>
           </ul>
         </nav>
       </header>
@@ -41,11 +41,11 @@ function App()
           <p>geen dokter</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, et? Nesciunt nihil, magni labore quidem ullam delectus molestiae eius rem dicta ipsa adipisci perferendis beatae quae sunt saepe quaerat laborum?</p>
         </section>
-        <section aria-labelledby='projecten-title'>
+        <section aria-labelledby='projecten-title' id='projecten' className='projecten'>
           <h2 id='projecten-title'>Projecten</h2>
           {projecten.data.map((project, i) => <ProjectPreview key={i} {...project} />)}
         </section>
-        <section aria-labelledby='CV-title'>
+        <section aria-labelledby='CV-title' id='CV' className='CV'>
           <h2 id='CV-title'>CV</h2>
 
           <button>Download CV</button>
