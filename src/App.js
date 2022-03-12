@@ -26,7 +26,7 @@ function App()
   return (
     < >
       <header>
-        <a href="#main-content">Navigatie overslaan</a>
+        <a className='skip-nav' href="#main-content">Navigatie overslaan</a>
         <nav>
           <ul>
             <li><a href="#projecten">Projecten</a></li>

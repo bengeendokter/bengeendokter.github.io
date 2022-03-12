@@ -6,7 +6,6 @@
   --clr-blue: 224, 25%, 48%;
   --clr-black: 240, 21%, 8%;
   --clr-white: 240, 100%, 99%;
-  
   --clr-background: hsla(var(--clr-black));
   --clr-accent1: hsla(var(--clr-purple));
   --clr-accent2: hsla(var(--clr-blue));
@@ -38,8 +37,40 @@
 
 html
 {
-  background:var(--clr-background);
+  background: var(--clr-background);
   color: var(--clr-text);
+}
+
+.skip-nav
+{
+  display: none;
+}
+
+/* header */
+header nav li
+{
+  list-style: none;
+  display: inline;
+}
+
+header nav a
+{
+  text-decoration: none;
+  color: var(--clr-text);
+  font-weight: bold;
+}
+
+header nav a:hover
+{
+  text-decoration: underline;
+}
+
+header nav ul
+{
+  padding: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
 }
 
 .projecten
