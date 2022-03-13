@@ -1,0 +1,37 @@
+.project-preview
+{
+    width: 100%;
+    display: grid;
+    justify-items: start;
+}
+
+.project-image
+{
+    width: 89%;
+    margin-inline: auto;
+    border-radius: 7px;
+}
+
+.project-title
+{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-inline-start: 0.5em;
+    margin-block: 0.5em;
+}
+
+.project-beschrijving
+{
+    padding-inline: 1.1em;
+}
+
+.tags
+{
+    /* width: 100%; */
+    margin-inline: 0.7em;
+    display: grid;
+    /* grid-auto-flow: column; */
+    justify-content: start;
+    grid-gap: 0.6em;
+    grid-template-columns: repeat(auto-fill,minmax(min-content, 1px));
+}

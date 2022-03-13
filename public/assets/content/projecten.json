@@ -4,7 +4,9 @@
         "title": "Scouts Alowis Site",
         "tags": ["HTML", "CSS"],
         "beschrijving": "Een site die ik heb gemaakt voor Scouts Sint-Aloysius Aalst.",
-        "imgAlt": "screenshot van Alowis Site"
+        "imgAlt": "screenshot van Alowis Site",
+        "imgSrc": "./assets/images/projecten/alowissite.png"
+
     },
     {
         "title": "Rummikub",

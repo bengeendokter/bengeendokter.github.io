@@ -11,7 +11,7 @@ function App()
   {
     async function fetchData()
     {
-      await fetch("./assets/projecten/data.json").then(response =>
+      await fetch("./assets/content/projecten.json").then(response =>
       {
         response.json().then(projecten =>
         {
