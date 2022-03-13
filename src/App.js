@@ -36,10 +36,10 @@ function App()
       </header>
       <main id='main-content'>
         <section title='intro'>
-          <img src="" alt="foto van mezelf" />
-          <p>Ben Arts</p>
-          <p>geen dokter</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, et? Nesciunt nihil, magni labore quidem ullam delectus molestiae eius rem dicta ipsa adipisci perferendis beatae quae sunt saepe quaerat laborum?</p>
+          <img src="./assets/images/PF.jpg" alt="foto van mezelf" className='PF' />
+          <p className='naam'>Ben Arts</p>
+          <p className='geendokter'>geen dokter</p>
+          <p className='intro-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, et? Nesciunt nihil, magni labore quidem ullam delectus molestiae eius rem dicta ipsa adipisci perferendis beatae quae sunt saepe quaerat laborum?</p>
         </section>
         <section aria-labelledby='projecten-title' id='projecten' className='projecten'>
           <h2 id='projecten-title'>Projecten</h2>

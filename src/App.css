@@ -6,10 +6,13 @@
   --clr-blue: 224, 25%, 48%;
   --clr-black: 240, 21%, 8%;
   --clr-white: 240, 100%, 99%;
+  --clr-gray: 0, 0%, 65%;
+
   --clr-background: hsla(var(--clr-black));
   --clr-accent1: hsla(var(--clr-purple));
   --clr-accent2: hsla(var(--clr-blue));
   --clr-text: hsla(var(--clr-white));
+  --clr-under-text: hsla(var(--clr-gray));
   --clr-selection: hsla(64, 82%, 59%);
 }
 
@@ -73,11 +76,52 @@ header nav ul
   justify-content: space-evenly;
 }
 
+/* intro */
+section[title='intro']
+{
+  display: grid;
+  justify-items: center;
+}
+
+.PF
+{
+  border-radius: 50%;
+  width: 60%;
+  box-shadow: -5px 7px 0px 0px var(--clr-text);
+}
+
+.naam
+{
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+.geendokter
+{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--clr-under-text);
+  margin-top: 0.3em;
+  margin-bottom: 0em;
+}
+
+.intro-text
+{
+  text-align: center;
+  margin-block: 1.9em;
+  padding-inline: 1em;
+}
+
+/* projecten */
 .projecten
 {
   background-color: var(--clr-accent1);
 }
 
+/* CV */
 .CV
 {
   background-color: var(--clr-accent2);
