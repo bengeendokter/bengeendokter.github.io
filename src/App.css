@@ -7,6 +7,7 @@
   --clr-black: 240, 21%, 8%;
   --clr-white: 240, 100%, 99%;
   --clr-gray: 0, 0%, 65%;
+
   --clr-background: hsla(var(--clr-black));
   --clr-accent1: hsla(var(--clr-purple));
   --clr-accent2: hsla(var(--clr-blue));
@@ -37,10 +38,37 @@
   color: var(--clr-background);
 }
 
+/* scrollbar */
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: var(--clr-under-text);
+  border-radius: 100vw;
+  margin-block: 0.2em;
+}
+
+::-webkit-scrollbar-track:hover
+{
+  background: var(--clr-text);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: var(--clr-background);
+  border: 1.5px solid transparent;
+  background-clip: content-box;
+  border-radius: 100vw;
+}
+
 html
 {
   background: var(--clr-background);
   color: var(--clr-text);
+  scroll-behavior: smooth;
 }
 
 .skip-nav
