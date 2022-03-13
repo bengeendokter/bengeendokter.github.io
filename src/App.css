@@ -129,8 +129,20 @@ section[title="intro"]
   margin-block-start: 0em;
   margin-block-end: 1em;
   font-size: 1.6rem;
-  padding: 0.6em;
+  padding: .6em;
   border-radius: 0px 0px 6px 6px;
+}
+
+.projecten > div:nth-of-type(1n+2)::before
+{
+  content: "";
+  width: 92%;
+  margin-inline: auto;
+  margin-block-end: 1em;
+  display: block;
+  height: 2px;
+  background: var(--clr-under-text);
+  border-radius: 2px;
 }
 
 /* CV */
@@ -148,6 +160,6 @@ section[title="intro"]
   margin-block-start: 0em;
   margin-block-end: 1em;
   font-size: 1.6rem;
-  padding: 0.6em;
+  padding: .6em;
   border-radius: 0px 0px 6px 6px;
 }
