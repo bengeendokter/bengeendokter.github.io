@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import './App.css';
 import ExtLink from './components/ExtLink';
+import CV from './components/CV';
 import ProjectPreview from './components/ProjectPreview';
 function App()
 {
@@ -47,7 +48,7 @@ function App()
         </section>
         <section aria-labelledby='CV-title' id='CV' className='CV'>
           <h2 id='CV-title'>CV</h2>
-
+            <CV/>
           <button>Download CV</button>
         </section>
       </main>

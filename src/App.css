@@ -47,8 +47,8 @@
 ::-webkit-scrollbar-track
 {
   background: var(--clr-under-text);
-  border-radius: 100vw;
-  margin-block: 0.2em;
+  /* border-radius: 100vw; */
+  /* margin-block: 0.2em; */
 }
 
 ::-webkit-scrollbar-track:hover
