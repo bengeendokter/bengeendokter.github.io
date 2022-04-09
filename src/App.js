@@ -36,7 +36,7 @@ function App()
         </nav>
       </header>
       <main id='main-content'>
-        <section title='intro'>
+        <section aria-label='intro'>
           <img src="./assets/images/PF.jpg" alt="foto van mezelf" className='PF' />
           <p className='naam'>Ben Arts</p>
           <p className='geendokter'>geen dokter</p>

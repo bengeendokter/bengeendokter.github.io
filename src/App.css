@@ -114,7 +114,7 @@ header nav ul
 }
 
 /* intro */
-section[title="intro"]
+section[aria-label="intro"]
 {
   display: grid;
   justify-items: center;
