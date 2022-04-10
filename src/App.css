@@ -83,26 +83,32 @@ header nav li
   display: inline;
 }
 
+header nav li:nth-of-type(1)
+{
+  --clr-shadow: var(--clr-accent1)
+}
+
+header nav li:nth-of-type(2)
+{
+  --clr-shadow: var(--clr-accent2)
+}
+
 header nav a
 {
   text-decoration: none;
   color: var(--clr-text);
   font-weight: bold;
-}
+  text-shadow: 0px 0px var(--clr-shadow);
 
-header nav li:nth-of-type(1)
-{
-text-shadow: -2px 2px var(--clr-accent1);
-}
-
-header nav li:nth-of-type(2)
-{
-text-shadow: -2px 2px var(--clr-accent2);
+  border: 2px solid var(--clr-shadow);
+  padding: 0.1rem 0.4rem;
+  border-radius: 100px / 99px;
 }
 
 header nav a:hover
 {
-  text-decoration: underline;
+  transition: text-shadow 0.2s ease;
+  text-shadow: -2px 2px var(--clr-shadow);
 }
 
 header nav ul
