@@ -98,17 +98,17 @@ header nav a
   text-decoration: none;
   color: var(--clr-text);
   font-weight: bold;
-  text-shadow: 0px 0px var(--clr-shadow);
 
   border: 2px solid var(--clr-shadow);
   padding: 0.1rem 0.4rem;
   border-radius: 100px / 99px;
 }
 
-header nav a:hover
+header nav a:hover, header nav a:focus
 {
-  transition: text-shadow 0.2s ease;
-  text-shadow: -2px 2px var(--clr-shadow);
+  transition: color 0.2s ease, background-color 0.2s ease;
+  color: var(--clr-background);
+  background-color: var(--clr-text);
 }
 
 header nav ul
@@ -132,8 +132,14 @@ aside
 
 .svg-icon
 {
-  fill: hsla(var(--clr-white));
+  fill: var(--clr-under-text);
   width: 2rem;
+}
+
+.svg-icon:hover, a:focus .svg-icon
+{
+  transition: fill 0.2s ease;
+  fill: var(--clr-text);
 }
 
 /* intro */
@@ -239,4 +245,11 @@ a[download="BenArtsCV"]
   border-radius: 6px;
   padding: .6em;
   margin-block: 0.7em;
+}
+
+a[download="BenArtsCV"]:hover, a[download="BenArtsCV"]:focus
+{
+  transition: color 0.2s ease, background-color 0.2s ease;
+  color: var(--clr-background);
+  background-color: var(--clr-text);
 }
