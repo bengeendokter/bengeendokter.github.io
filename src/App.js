@@ -4,8 +4,8 @@ import './App.css';
 import ExtLink from './components/ExtLink';
 import CV from './components/CV';
 import ProjectPreview from './components/ProjectPreview';
-import { ReactComponent as GithubSVG } from './components/SVGIcons/github.svg';
-import { ReactComponent as LinkedinSVG } from './components/SVGIcons/linkedin.svg';
+import {ReactComponent as GithubSVG} from './components/SVGIcons/github.svg';
+import {ReactComponent as LinkedinSVG} from './components/SVGIcons/linkedin.svg';
 
 function App()
 {
@@ -41,12 +41,14 @@ function App()
       <main id='main-content'>
         <section aria-label='intro'>
           <img src="./assets/images/PF.jpg" alt="foto van mezelf" className='PF' />
-          <p className='naam'>Ben Arts</p>
-          <p className='geendokter'>geen dokter</p>
-          <p className='intro-text'>Hallo ik ben Ben,
-            een tweedejaars student bachelor toegepaste informatica en dit is mijn portfolio.
-            Hieronder vinden jullie mijn projecten en CV.
+          <div className='intro-info'>
+            <p className='naam'>Ben Arts</p>
+            <p className='geendokter'>geen dokter</p>
+            <p className='intro-text'>Hallo ik ben Ben,
+              een tweedejaars student bachelor toegepaste informatica en dit is mijn portfolio.
+              Hieronder vinden jullie mijn projecten en CV.
             </p>
+          </div>
         </section>
         <section aria-labelledby='projecten-title' id='projecten' className='projecten'>
           <h2 id='projecten-title'>Projecten</h2>
@@ -63,6 +65,9 @@ function App()
           <ExtLink href='https://github.com/bengeendokter' ><GithubSVG className='svg-icon' /></ExtLink>
           <ExtLink href='https://linkedin.com' ><LinkedinSVG className='svg-icon' /></ExtLink>
         </aside>
+        <small>
+          Copyright &copy; {new Date().getFullYear()}, Ben Arts<br/> Alle rechten voorbehouden
+        </small>
       </footer>
 
     </>

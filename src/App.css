@@ -7,7 +7,6 @@
   --clr-black: 240, 21%, 8%;
   --clr-white: 240, 100%, 99%;
   --clr-gray: 0, 0%, 65%;
-
   --clr-background: hsla(var(--clr-black));
   --clr-accent1: hsla(var(--clr-purple));
   --clr-accent2: hsla(var(--clr-blue));
@@ -85,12 +84,12 @@ header nav li
 
 header nav li:nth-of-type(1)
 {
-  --clr-shadow: var(--clr-accent1)
+  --clr-shadow: var(--clr-accent1);
 }
 
 header nav li:nth-of-type(2)
 {
-  --clr-shadow: var(--clr-accent2)
+  --clr-shadow: var(--clr-accent2);
 }
 
 header nav a
@@ -98,15 +97,14 @@ header nav a
   text-decoration: none;
   color: var(--clr-text);
   font-weight: bold;
-
   border: 2px solid var(--clr-shadow);
-  padding: 0.1rem 0.4rem;
+  padding: .1rem .4rem;
   border-radius: 100px / 99px;
 }
 
 header nav a:hover, header nav a:focus
 {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color .2s ease, background-color .2s ease;
   color: var(--clr-background);
   background-color: var(--clr-text);
 }
@@ -126,7 +124,7 @@ aside
   grid-auto-flow: column;
   justify-content: center;
   margin-block: 1em;
-  grid-gap: 3.9em;
+  grid-gap: clamp(3.9em, 9vw, 16em);
   align-items: center;
 }
 
@@ -138,12 +136,27 @@ aside
 
 .svg-icon:hover, a:focus .svg-icon
 {
-  transition: fill 0.2s ease;
+  transition: fill .2s ease;
   fill: var(--clr-text);
+}
+
+small
+{
+  color: var(--clr-text);
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-block: 1.1em;
 }
 
 /* intro */
 section[aria-label="intro"]
+{
+  display: grid;
+  justify-items: center;
+}
+
+.intro-info
 {
   display: grid;
   justify-items: center;
@@ -244,12 +257,77 @@ a[download="BenArtsCV"]
   font-weight: bold;
   border-radius: 6px;
   padding: .6em;
-  margin-block: 0.7em;
+  margin-block: .7em;
 }
 
 a[download="BenArtsCV"]:hover, a[download="BenArtsCV"]:focus
 {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color .2s ease, background-color .2s ease;
   color: var(--clr-background);
   background-color: var(--clr-text);
+}
+
+/* desktop styles */
+@media screen and (min-width: 600px)
+{
+  .projecten
+  {
+    padding-inline: 3%;
+  }
+}
+
+@media screen and (min-width: 800px)
+{
+  /* nav */
+  header nav ul
+  {
+    justify-content: end;
+    grid-gap: 2em;
+    margin-right: 2em;
+  }
+
+  /* intro */
+  section[aria-label="intro"]
+  {
+    margin-block: 4em;
+    margin-left: 3.2em;
+    grid-template-areas: "intro-info img";
+  }
+
+  .PF
+  {
+    grid-area: img;
+  }
+
+  .intro-info
+  {
+    grid-area: intro-info;
+    justify-items: start;
+    align-content: center;
+  }
+
+  .intro-text
+  {
+    text-align: left;
+    margin-block: 1em;
+    padding-inline: 0em;
+  }
+
+  /* projecten */
+  .projecten
+  {
+    padding-bottom: 1.7em;
+    grid-gap: 1.5em;
+  }
+
+  .projecten > div:nth-of-type(1n+2)::before
+  {
+    width: 80%;
+  }
+
+  /* CV */
+  .CV img
+  {
+    max-width: 60vw;
+  }
 }
