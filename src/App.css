@@ -113,6 +113,22 @@ header nav ul
   justify-content: space-evenly;
 }
 
+/* footer */
+aside
+{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  margin-block: 1em;
+  grid-gap: 3.9em;
+}
+
+.svg-icon
+{
+  fill: hsla(var(--clr-white));
+  width: 2rem;
+}
+
 /* intro */
 section[aria-label="intro"]
 {
@@ -200,4 +216,20 @@ section[aria-label="intro"]
   font-size: 1.6rem;
   padding: .6em;
   border-radius: 0px 0px 6px 6px;
+}
+
+.CV img
+{
+  border-radius: 6px;
+}
+
+a[download="BenArtsCV"]
+{
+  color: var(--clr-text);
+  background: var(--clr-background);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: .6em;
+  margin-block: 0.7em;
 }

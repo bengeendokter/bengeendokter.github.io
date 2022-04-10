@@ -4,6 +4,9 @@ import './App.css';
 import ExtLink from './components/ExtLink';
 import CV from './components/CV';
 import ProjectPreview from './components/ProjectPreview';
+import { ReactComponent as GithubSVG } from './components/SVGIcons/github.svg';
+import { ReactComponent as LinkedinSVG } from './components/SVGIcons/linkedin.svg';
+
 function App()
 {
   const [projecten, setProjecten] = useState({data: []});
@@ -40,7 +43,10 @@ function App()
           <img src="./assets/images/PF.jpg" alt="foto van mezelf" className='PF' />
           <p className='naam'>Ben Arts</p>
           <p className='geendokter'>geen dokter</p>
-          <p className='intro-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, et? Nesciunt nihil, magni labore quidem ullam delectus molestiae eius rem dicta ipsa adipisci perferendis beatae quae sunt saepe quaerat laborum?</p>
+          <p className='intro-text'>Hallo ik ben Ben,
+            een tweedejaars student bachelor toegepaste informatica en dit is mijn portfolio.
+            Hieronder vinden jullie mijn projecten en CV.
+            </p>
         </section>
         <section aria-labelledby='projecten-title' id='projecten' className='projecten'>
           <h2 id='projecten-title'>Projecten</h2>
@@ -48,13 +54,14 @@ function App()
         </section>
         <section aria-labelledby='CV-title' id='CV' className='CV'>
           <h2 id='CV-title'>CV</h2>
-            <CV/>
-          <button>Download CV</button>
+          <CV />
+          <a href="./assets/documenten/BenArtsCV.pdf" download="BenArtsCV">Download CV</a>
         </section>
       </main>
       <footer>
         <aside>
-          <ExtLink href='https://github.com/bengeendokter' >github</ExtLink>
+          <ExtLink href='https://github.com/bengeendokter' ><GithubSVG className='svg-icon' /></ExtLink>
+          <ExtLink href='https://linkedin.com' ><LinkedinSVG className='svg-icon' /></ExtLink>
         </aside>
       </footer>
 
