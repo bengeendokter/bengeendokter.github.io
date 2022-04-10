@@ -17,12 +17,14 @@
   font-weight: 700;
   font-size: 1.3rem;
   margin-inline-start: .5em;
-  margin-block: .5em;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
 }
 
 .project-beschrijving
 {
   padding-inline: 1.1em;
+  margin-top: 0em;
 }
 
 .tags
@@ -33,4 +35,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: .3em;
+  align-items: center;
+  min-height: 2.2em;
 }
