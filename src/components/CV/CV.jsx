@@ -16,14 +16,14 @@ export default function CV({children, ...rest})
                     <li>Applicatieontwikkeling</li>
                     <li>Webdevelopment</li>
                 </ul>
-                {/* elevator pitch
-                What you do
-                What you want to do
-                Where
-                Sector
-                Skills you want to improve/use/emphasize */}
-                <p>Behulpzaam Bemiddelend Meelevend Vragensteller Luisteren Omgaan met details</p>
-                <p></p>
+                <p>Hallo ik ben Ben,
+                    een tweedejaars student bachelor toegepaste informatica.
+                    Zelf beschrijf ik me als
+                    een <strong>behulpzaam</strong> en <strong>bemiddelend</strong> persoon
+                    met <strong>oog voor detail</strong>.
+                    Ik ben op zoek naar mijn eerste job in <strong>(web)development</strong> waar
+                    ik mee kan nadenken over het oplossen van problemen en nog veel kan bijleren.  
+                </p>
                 <p><a href="mailto:ben.arts.mail@gmail.com">ben.arts.mail@gmail.com</a></p>
                 <p><a href="tel:+32 400 00 00 00">+32 400 00 00 00</a></p>
                 <p>27/03/2000</p>
