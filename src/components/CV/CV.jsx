@@ -1,6 +1,6 @@
 import React from 'react';
 import CVCSS from './CV.module.css';
-import ExtLink from '../ExtLink';
+// import ExtLink from '../ExtLink';
 
 export default function CV({children, ...rest})
 {

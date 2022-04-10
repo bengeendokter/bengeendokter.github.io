@@ -121,6 +121,7 @@ aside
   justify-content: center;
   margin-block: 1em;
   grid-gap: 3.9em;
+  align-items: center;
 }
 
 .svg-icon
