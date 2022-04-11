@@ -5,7 +5,7 @@ import ExtLink from './components/ExtLink';
 import CV from './components/CV';
 import ProjectPreview from './components/ProjectPreview';
 import {ReactComponent as GithubSVG} from './components/SVGIcons/github.svg';
-import {ReactComponent as LinkedinSVG} from './components/SVGIcons/linkedin.svg';
+// import {ReactComponent as LinkedinSVG} from './components/SVGIcons/linkedin.svg';
 
 function App()
 {
@@ -63,7 +63,7 @@ function App()
       <footer>
         <aside>
           <ExtLink href='https://github.com/bengeendokter' aria-label="GitHub" ><GithubSVG className='svg-icon' /></ExtLink>
-          <ExtLink href='https://linkedin.com' aria-label="LinkedIn" ><LinkedinSVG className='svg-icon' /></ExtLink>
+          {/* <ExtLink href='https://linkedin.com' aria-label="LinkedIn" ><LinkedinSVG className='svg-icon' /></ExtLink> */}
         </aside>
         <small>
           Copyright &copy; {new Date().getFullYear()}, Ben Arts<br/> Alle rechten voorbehouden

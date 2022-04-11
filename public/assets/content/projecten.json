@@ -9,6 +9,14 @@
         "github": "https://github.com/bengeendokter/ALOWIS-site"
     },
     {
+        "title": "Dragon, fly!",
+        "tags": ["Godot", "Game Engine"],
+        "beschrijving": "Video game gemaakt met de Godot game engine.",
+        "imgAlt": "screenshot van 'Dragon, fly!' spel",
+        "imgSrc": "./assets/images/projecten/dragon-fly.png",
+        "github": "https://github.com/bengeendokter/GODOT-dragon-fly"
+    },
+    {
         "title": "Rummikub",
         "tags": ["Java", "Groepswerk" ,"HOGENT"],
         "beschrijving": "Java applictie van het spel Rummikub.",
