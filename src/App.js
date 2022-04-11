@@ -40,7 +40,7 @@ function App()
       </header>
       <main id='main-content'>
         <section aria-label='intro'>
-          <img src="./assets/images/PF.jpg" alt="foto van mezelf" className='PF' />
+          <img src="./assets/images/PF.jpg" width="300" height="300" alt="foto van mezelf" className='PF' />
           <div className='intro-info'>
             <p className='naam'>Ben Arts</p>
             <p className='geendokter'>geen dokter</p>
@@ -62,8 +62,8 @@ function App()
       </main>
       <footer>
         <aside>
-          <ExtLink href='https://github.com/bengeendokter' ><GithubSVG className='svg-icon' /></ExtLink>
-          <ExtLink href='https://linkedin.com' ><LinkedinSVG className='svg-icon' /></ExtLink>
+          <ExtLink href='https://github.com/bengeendokter' aria-label="GitHub" ><GithubSVG className='svg-icon' /></ExtLink>
+          <ExtLink href='https://linkedin.com' aria-label="LinkedIn" ><LinkedinSVG className='svg-icon' /></ExtLink>
         </aside>
         <small>
           Copyright &copy; {new Date().getFullYear()}, Ben Arts<br/> Alle rechten voorbehouden

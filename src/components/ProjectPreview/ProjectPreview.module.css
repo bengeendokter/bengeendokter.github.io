@@ -13,6 +13,7 @@
 .project-image
 {
   width: 89%;
+  height: auto;
   margin-inline: auto;
   border-radius: 7px;
 }
