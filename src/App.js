@@ -42,7 +42,7 @@ function App()
         <section aria-label='intro'>
           <img src="./assets/images/PF.jpg" width="300" height="300" alt="foto van mezelf" className='PF' />
           <div className='intro-info'>
-            <p className='naam'>Ben Arts</p>
+            <h1 className='naam'>Ben Arts</h1>
             <p className='geendokter'>geen dokter</p>
             <p className='intro-text'>Hallo ik ben Ben,
               een tweedejaars student bachelor toegepaste informatica en dit is mijn portfolio.
