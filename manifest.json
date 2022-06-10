@@ -1,6 +1,27 @@
 {
     "short_name": "Portfolio",
     "name": "Portfolio Ben",
+    "shortcuts" : [
+      {
+        "name": "CV",
+        "url": "/#CV",
+        "description": "CV pagina",
+        "icons": [{
+          "src": "CV.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }]
+      },
+      {
+        "name": "Projecten",
+        "url": "/#projecten",
+        "icons": [{
+          "src": "Pr.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }]
+      }
+    ],
     "icons": [
     {
         "src": "favicon.ico",
